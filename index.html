@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evita perder contratos públicos por conflictos de interés. Detección automática con IA, 100% adaptado a la Ley 21.634.">
+    <meta name="keywords" content="compliance, probidad, licitaciones, mercado público, ley 21.634, conflictos de interés">
+    <title>ProbidadIA | Compliance Automático para Proveedores del Estado</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        .btn-primary {
+            background: #21808d;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn-primary:hover {
+            background: #1d7480;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(33, 128, 141, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #21808d;
+            padding: 0.75rem 2rem;
+            border: 2px solid #21808d;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn-secondary:hover {
+            background: #21808d;
+            color: white;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #fcfcf9 0%, #f5f5f5 100%);
+        }
+        
+        .gradient-teal {
+            background: linear-gradient(135deg, #21808d 0%, #1d7480 100%);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-[#fcfcf9] text-[#13343b]">
+
+    <!-- HERO SECTION -->
+    <section class="gradient-bg py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-16 w-16 bg-[#21808d] rounded-lg flex items-center justify-center text-white text-2xl font-bold">
+                        G
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-bold ml-3 text-[#13343b]">Gaen</h1>
+                </div>
+                <div class="inline-block bg-[#21808d]/10 text-[#21808d] px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    🚀 Lanzamiento Especial - 20 Cupos Fundadores
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    ¿Tu empresa está en riesgo de perder contratos públicos por 
+                    <span class="text-[#21808d]">conflictos de interés</span>?
+                </h2>
+                
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                    Evita inhabilitaciones, multas y escándalos. Detecta conflictos automáticamente 
+                    con IA, cumple la Ley 21.634 y duerme tranquilo.
+                </p>
+
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                    <a href="#pricing" class="btn-primary">
+                        Ver Planes → Desde $49.900/mes
+                    </a>
+                    <a href="mailto:contacto@gaencenter.com" class="btn-secondary">
+                        Solicitar Demo
+                    </a>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+                    <div class="flex items-center">
+                        <span class="text-green-500 mr-2 text-lg">✓</span>
+                        Onboarding en minutos
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-green-500 mr-2 text-lg">✓</span>
+                        Sin contratos largos
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-green-500 mr-2 text-lg">✓</span>
+                        Cancela cuando quieras
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    El Costo de <span class="text-red-600">NO</span> Tener Control
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Cada día sin un sistema de detección automática es un día de riesgo para tu empresa
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="text-4xl mb-4">⚠️</div>
+                    <h3 class="text-xl font-bold mb-3">Inhabilitaciones Millonarias</h3>
+                    <p class="text-gray-700">Un solo error no detectado puede costarte contratos de millones de pesos y años de inhabilitación.</p>
+                </div>
+
+                <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h3 class="text-xl font-bold mb-3">Ley 21.634 Obliga Transparencia Total</h3>
+                    <p class="text-gray-700">La nueva normativa exige verificar vínculos familiares, societarios y laborales. El proceso manual es imposible.</p>
+                </div>
+
+                <div class="bg-red-50 border-2 border-red-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-3">Riesgo Reputacional Permanente</h3>
+                    <p class="text-gray-700">Un escándalo de conflicto de interés destruye tu marca, relaciones y oportunidades futuras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTION SECTION -->
+    <section class="py-20 px-4 bg-gradient-to-br from-[#21808d]/5 to-[#21808d]/10">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Compliance <span class="text-[#21808d]">Predictivo</span>, No Reactivo
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    ProbidadIA te protege ANTES de que ocurra el problema, con monitoreo 24/7 y alertas en tiempo real
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-[#21808d] text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">1</div>
+                    <h3 class="text-lg font-bold mb-2">Ingresas Personas/Empresas</h3>
+                    <p class="text-gray-600 text-sm">Simplemente ingresas RUT o nombre en la plataforma</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-[#21808d] text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">2</div>
+                    <h3 class="text-lg font-bold mb-2">IA Cruza Bases Públicas</h3>
+                    <p class="text-gray-600 text-sm">Sistema analiza SII, Diario Oficial, Mercado Público</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-[#21808d] text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">3</div>
+                    <h3 class="text-lg font-bold mb-2">Alertas Instantáneas</h3>
+                    <p class="text-gray-600 text-sm">Dashboard muestra vínculos con nivel de riesgo</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-[#21808d] text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">4</div>
+                    <h3 class="text-lg font-bold mb-2">Reportes Auditables</h3>
+                    <p class="text-gray-600 text-sm">Descarga PDF con evidencia legal</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-xl">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">✅ Lo Que Obtienes:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 text-xl">✓</span>
+                                <span>Detección automática de vínculos prohibidos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 text-xl">✓</span>
+                                <span>Monitoreo continuo 24/7</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 text-xl">✓</span>
+                                <span>Dashboard interactivo en tiempo real</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 text-xl">✓</span>
+                                <span>Reportes PDF auditables</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 text-xl">✓</span>
+                                <span>Alertas por email/SMS</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 text-xl">✓</span>
+                                <span>Soporte humano + IA</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">❌ Lo Que Evitas:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2 font-bold">✗</span>
+                                <span class="text-gray-700">Inhabilitaciones por errores evitables</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2 font-bold">✗</span>
+                                <span class="text-gray-700">Multas millonarias del Estado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2 font-bold">✗</span>
+                                <span class="text-gray-700">Escándalos públicos y mediáticos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2 font-bold">✗</span>
+                                <span class="text-gray-700">Pérdida de contratos futuros</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2 font-bold">✗</span>
+                                <span class="text-gray-700">Auditorías manuales costosas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-500 mr-2 font-bold">✗</span>
+                                <span class="text-gray-700">Procesos burocráticos eternos</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Elige Tu Plan</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Desde $49.900/mes. Sin sorpresas, sin letra chica. Cancela cuando quieras.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- PLAN PYME -->
+                <div class="rounded-2xl p-8 gradient-teal text-white shadow-2xl transform scale-105">
+                    <div class="bg-white text-[#21808d] text-sm font-bold py-1 px-3 rounded-full inline-block mb-4">
+                        ⭐ MÁS POPULAR
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-white">PyME</h3>
+                    <p class="text-sm mb-4 text-white/80">1-15 trabajadores</p>
+
+                    <div class="bg-yellow-400 text-gray-900 text-xs font-bold py-1 px-2 rounded mb-2 inline-block">
+                        🔥 Precio Fundador
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="text-lg line-through text-white/60">$79.900</div>
+                        <div class="text-4xl font-bold text-white">$49.900</div>
+                        <div class="text-sm text-white/80">/mes + IVA</div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start text-sm">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>35 verificaciones/mes</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>Dashboard básico</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>Alertas email</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>Reportes PDF ilimitados</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>Soporte email</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>Actualizaciones automáticas</span>
+                        </li>
+                    </ul>
+
+                    <a href="mailto:contacto@gaencenter.com?subject=Solicitud Plan PyME" class="block w-full text-center bg-white text-[#21808d] hover:bg-gray-100 py-3 px-6 rounded-lg font-semibold transition-all">
+                        Comenzar Ahora
+                    </a>
+                </div>
+
+                <!-- PLAN PEQUEÑA -->
+                <div class="rounded-2xl p-8 bg-gray-50 border-2 border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900">Pequeña</h3>
+                    <p class="text-sm mb-4 text-gray-600">16-30 trabajadores</p>
+
+                    <div class="mb-6">
+                        <div class="text-4xl font-bold text-gray-900">$119.000</div>
+                        <div class="text-sm text-gray-600">/mes + IVA</div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">75 verificaciones/mes</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Dashboard avanzado</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Visualización grafo</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">3 cupos capacitación SENCE</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">API básica</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Soporte prioritario</span>
+                        </li>
+                    </ul>
+
+                    <a href="mailto:contacto@gaencenter.com?subject=Solicitud Plan Pequeña" class="block w-full text-center bg-[#21808d] text-white hover:bg-[#1d7480] py-3 px-6 rounded-lg font-semibold transition-all">
+                        Solicitar Demo
+                    </a>
+                </div>
+
+                <!-- PLAN MEDIANA -->
+                <div class="rounded-2xl p-8 bg-gray-50 border-2 border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900">Mediana</h3>
+                    <p class="text-sm mb-4 text-gray-600">31-100 trabajadores</p>
+
+                    <div class="mb-6">
+                        <div class="text-4xl font-bold text-gray-900">$199.000</div>
+                        <div class="text-sm text-gray-600">/mes + IVA</div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">200 verificaciones/mes</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Visualización avanzada</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Auditoría digital automática</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">10 cupos capacitación SENCE</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">API avanzada</span>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Soporte dedicado</span>
+                        </li>
+                    </ul>
+
+                    <a href="mailto:contacto@gaencenter.com?subject=Solicitud Plan Mediana" class="block w-full text-center bg-[#21808d] text-white hover:bg-[#1d7480] py-3 px-6 rounded-lg font-semibold transition-all">
+                        Solicitar Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 px-4 gradient-teal text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                ¿Listo Para Proteger Tu Empresa?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Únete a las empresas que ya protegen sus contratos públicos con ProbidadIA
+            </p>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center mb-8">
+                <a href="#pricing" class="bg-white text-[#21808d] hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-all">
+                    Ver Planes
+                </a>
+                <a href="mailto:contacto@gaencenter.com" class="bg-transparent border-2 border-white hover:bg-white hover:text-[#21808d] font-semibold py-4 px-8 rounded-lg transition-all">
+                    Contactar Ventas
+                </a>
+            </div>
+
+            <div class="text-sm opacity-75">
+                ✅ Sin contratos largos  •  ✅ Cancela cuando quieras  •  ✅ Soporte en español
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#13343b] text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Gaen</h3>
+                <p class="text-sm text-gray-400">
+                    GovTech & Compliance Solutions
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Producto</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#pricing" class="hover:text-white">Precios</a></li>
+                    <li><a href="mailto:contacto@gaencenter.com" class="hover:text-white">Demo</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Empresa</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="mailto:contacto@gaencenter.com" class="hover:text-white">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Contacto</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>📧 contacto@gaencenter.com</li>
+                    <li>📧 soporte@gaencenter.com</li>
+                    <li>🇨🇱 Chile</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
+            <p>© 2025 Clean Lif SPA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
