@@ -61,6 +61,16 @@
         html {
             scroll-behavior: smooth;
         }
+        
+        .price-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card.featured {
+            transform: scale(1.05);
+            z-index: 10;
+        }
     </style>
 </head>
 <body class="bg-[#fcfcf9] text-[#13343b]">
@@ -76,24 +86,22 @@
                     <h1 class="text-3xl md:text-4xl font-bold ml-3 text-[#13343b]">Gaen</h1>
                 </div>
                 <div class="inline-block bg-[#21808d]/10 text-[#21808d] px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                    🚀 Lanzamiento Especial - 20 Cupos Fundadores
+                    🚀 Lanzamiento Especial - 20 Cupos Fundadores PyME
                 </div>
             </div>
 
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                    ¿Tu empresa está en riesgo de perder contratos públicos por 
-                    <span class="text-[#21808d]">conflictos de interés</span>?
+                    ¿Cansado de pagar <span class="text-red-600">$180.000</span> cada vez por un PDF que se vuelve obsoleto en días?
                 </h2>
                 
                 <p class="text-xl md:text-2xl text-gray-600 mb-8">
-                    Evita inhabilitaciones, multas y escándalos. Detecta conflictos automáticamente 
-                    con IA, cumple la Ley 21.634 y duerme tranquilo.
+                    ProbidadIA: Monitoreo automático 24/7 con IA. Cumple Ley 21.634, evita inhabilitaciones y duerme tranquilo.
                 </p>
 
                 <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
                     <a href="#pricing" class="btn-primary">
-                        Ver Planes → Desde $49.900/mes
+                        Ver Planes → Desde $220.000
                     </a>
                     <a href="mailto:contacto@gaencenter.com" class="btn-secondary">
                         Solicitar Demo
@@ -103,7 +111,7 @@
                 <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
                     <div class="flex items-center">
                         <span class="text-green-500 mr-2 text-lg">✓</span>
-                        Onboarding en minutos
+                        Migración en minutos
                     </div>
                     <div class="flex items-center">
                         <span class="text-green-500 mr-2 text-lg">✓</span>
@@ -209,7 +217,7 @@
                             </li>
                             <li class="flex items-start">
                                 <span class="text-green-500 mr-2 text-xl">✓</span>
-                                <span>Reportes PDF auditables</span>
+                                <span>Reportes PDF auditables ilimitados</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="text-green-500 mr-2 text-xl">✓</span>
@@ -261,145 +269,225 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-bold mb-4">Elige Tu Plan</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Desde $49.900/mes. Sin sorpresas, sin letra chica. Cancela cuando quieras.
+                    Desde $220.000 inicial + $89.000/mes. Monitoreo vivo vs PDF obsoleto.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- PLAN PYME -->
-                <div class="rounded-2xl p-8 gradient-teal text-white shadow-2xl transform scale-105">
-                    <div class="bg-white text-[#21808d] text-sm font-bold py-1 px-3 rounded-full inline-block mb-4">
-                        ⭐ MÁS POPULAR
-                    </div>
+            <!-- TABLA COMPARATIVA -->
+            <div class="grid md:grid-cols-5 gap-6">
+                
+                <!-- SOLO PDF (SEÑUELO MÍNIMO) -->
+                <div class="price-card rounded-2xl p-6 bg-gray-100 border-2 border-gray-300">
+                    <h3 class="text-xl font-bold text-gray-900">Solo PDF</h3>
+                    <p class="text-sm text-gray-600 mb-4">Sin monitoreo</p>
                     
-                    <h3 class="text-2xl font-bold text-white">PyME</h3>
-                    <p class="text-sm mb-4 text-white/80">1-15 trabajadores</p>
-
-                    <div class="bg-yellow-400 text-gray-900 text-xs font-bold py-1 px-2 rounded mb-2 inline-block">
-                        🔥 Precio Fundador
-                    </div>
-
                     <div class="mb-6">
-                        <div class="text-lg line-through text-white/60">$79.900</div>
-                        <div class="text-4xl font-bold text-white">$49.900</div>
-                        <div class="text-sm text-white/80">/mes + IVA</div>
+                        <div class="text-3xl font-bold text-gray-900">$180K</div>
+                        <div class="text-sm text-gray-600">+ IVA (one-shot)</div>
                     </div>
 
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start text-sm">
-                            <span class="mr-2 text-white">✓</span>
-                            <span>35 verificaciones/mes</span>
+                    <ul class="space-y-2 mb-8 text-sm">
+                        <li class="flex items-start">
+                            <span class="text-gray-400 mr-2">✓</span>
+                            <span class="text-gray-600">PDF personalizado</span>
                         </li>
-                        <li class="flex items-start text-sm">
-                            <span class="mr-2 text-white">✓</span>
-                            <span>Dashboard básico</span>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">✗</span>
+                            <span class="text-gray-600">Sin monitoreo</span>
                         </li>
-                        <li class="flex items-start text-sm">
-                            <span class="mr-2 text-white">✓</span>
-                            <span>Alertas email</span>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">✗</span>
+                            <span class="text-gray-600">Sin alertas</span>
                         </li>
-                        <li class="flex items-start text-sm">
-                            <span class="mr-2 text-white">✓</span>
-                            <span>Reportes PDF ilimitados</span>
-                        </li>
-                        <li class="flex items-start text-sm">
-                            <span class="mr-2 text-white">✓</span>
-                            <span>Soporte email</span>
-                        </li>
-                        <li class="flex items-start text-sm">
-                            <span class="mr-2 text-white">✓</span>
-                            <span>Actualizaciones automáticas</span>
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">✗</span>
+                            <span class="text-gray-600">Sin dashboard</span>
                         </li>
                     </ul>
 
-                    <a href="mailto:contacto@gaencenter.com?subject=Solicitud Plan PyME" class="block w-full text-center bg-white text-[#21808d] hover:bg-gray-100 py-3 px-6 rounded-lg font-semibold transition-all">
+                    <a href="mailto:contacto@gaencenter.com?subject=Solo PDF" class="block w-full text-center bg-gray-400 text-white py-3 px-4 rounded-lg font-semibold">
+                        Solicitar
+                    </a>
+                </div>
+
+                <!-- PYME FUNDADORA (MÁS POPULAR) -->
+                <div class="price-card featured rounded-2xl p-6 gradient-teal text-white shadow-2xl">
+                    <div class="bg-yellow-400 text-gray-900 text-xs font-bold py-1 px-3 rounded-full inline-block mb-3">
+                        🔥 OFERTA FUNDADORA
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-white">PyME</h3>
+                    <p class="text-sm text-white/80 mb-4">1-15 trabajadores</p>
+
+                    <div class="mb-6">
+                        <div class="text-lg line-through text-white/60">$250.000</div>
+                        <div class="text-4xl font-bold text-white">$220K</div>
+                        <div class="text-sm text-white/80">+ IVA inicial</div>
+                        <div class="text-lg font-bold text-white mt-2">$89K/mes</div>
+                        <div class="text-xs text-white/80">+ IVA mensual</div>
+                    </div>
+
+                    <ul class="space-y-2 mb-8 text-sm">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>35 verificaciones/mes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>Dashboard + alertas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>Reportes ilimitados</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>Soporte email</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-white">✓</span>
+                            <span>Capacitación virtual</span>
+                        </li>
+                    </ul>
+
+                    <a href="mailto:contacto@gaencenter.com?subject=Plan PyME Fundadora" class="block w-full text-center bg-white text-[#21808d] hover:bg-gray-100 py-3 px-4 rounded-lg font-semibold transition">
                         Comenzar Ahora
                     </a>
                 </div>
 
-                <!-- PLAN PEQUEÑA -->
-                <div class="rounded-2xl p-8 bg-gray-50 border-2 border-gray-200">
-                    <h3 class="text-2xl font-bold text-gray-900">Pequeña</h3>
-                    <p class="text-sm mb-4 text-gray-600">16-30 trabajadores</p>
-
+                <!-- PEQUEÑA EMPRESA -->
+                <div class="price-card rounded-2xl p-6 bg-gray-50 border-2 border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900">Pequeña</h3>
+                    <p class="text-sm text-gray-600 mb-4">16-50 trabajadores</p>
+                    
                     <div class="mb-6">
-                        <div class="text-4xl font-bold text-gray-900">$119.000</div>
-                        <div class="text-sm text-gray-600">/mes + IVA</div>
+                        <div class="text-3xl font-bold text-gray-900">$270K</div>
+                        <div class="text-sm text-gray-600">+ IVA inicial</div>
+                        <div class="text-lg font-bold text-gray-900 mt-2">$139K/mes</div>
+                        <div class="text-xs text-gray-600">+ IVA mensual</div>
                     </div>
 
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start text-sm">
+                    <ul class="space-y-2 mb-8 text-sm">
+                        <li class="flex items-start">
                             <span class="text-green-500 mr-2">✓</span>
                             <span class="text-gray-700">75 verificaciones/mes</span>
                         </li>
-                        <li class="flex items-start text-sm">
+                        <li class="flex items-start">
                             <span class="text-green-500 mr-2">✓</span>
                             <span class="text-gray-700">Dashboard avanzado</span>
                         </li>
-                        <li class="flex items-start text-sm">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span class="text-gray-700">Visualización grafo</span>
-                        </li>
-                        <li class="flex items-start text-sm">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span class="text-gray-700">3 cupos capacitación SENCE</span>
-                        </li>
-                        <li class="flex items-start text-sm">
+                        <li class="flex items-start">
                             <span class="text-green-500 mr-2">✓</span>
                             <span class="text-gray-700">API básica</span>
                         </li>
-                        <li class="flex items-start text-sm">
+                        <li class="flex items-start">
                             <span class="text-green-500 mr-2">✓</span>
                             <span class="text-gray-700">Soporte prioritario</span>
                         </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Capacitación grabada</span>
+                        </li>
                     </ul>
 
-                    <a href="mailto:contacto@gaencenter.com?subject=Solicitud Plan Pequeña" class="block w-full text-center bg-[#21808d] text-white hover:bg-[#1d7480] py-3 px-6 rounded-lg font-semibold transition-all">
+                    <a href="mailto:contacto@gaencenter.com?subject=Plan Pequeña Empresa" class="block w-full text-center bg-[#21808d] text-white hover:bg-[#1d7480] py-3 px-4 rounded-lg font-semibold transition">
                         Solicitar Demo
                     </a>
                 </div>
 
-                <!-- PLAN MEDIANA -->
-                <div class="rounded-2xl p-8 bg-gray-50 border-2 border-gray-200">
-                    <h3 class="text-2xl font-bold text-gray-900">Mediana</h3>
-                    <p class="text-sm mb-4 text-gray-600">31-100 trabajadores</p>
-
+                <!-- MEDIANA EMPRESA -->
+                <div class="price-card rounded-2xl p-6 bg-gray-50 border-2 border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900">Mediana</h3>
+                    <p class="text-sm text-gray-600 mb-4">51-200 trabajadores</p>
+                    
                     <div class="mb-6">
-                        <div class="text-4xl font-bold text-gray-900">$199.000</div>
-                        <div class="text-sm text-gray-600">/mes + IVA</div>
+                        <div class="text-3xl font-bold text-gray-900">$350K</div>
+                        <div class="text-sm text-gray-600">+ IVA inicial</div>
+                        <div class="text-lg font-bold text-gray-900 mt-2">$199K/mes</div>
+                        <div class="text-xs text-gray-600">+ IVA mensual</div>
                     </div>
 
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start text-sm">
+                    <ul class="space-y-2 mb-8 text-sm">
+                        <li class="flex items-start">
                             <span class="text-green-500 mr-2">✓</span>
                             <span class="text-gray-700">200 verificaciones/mes</span>
                         </li>
-                        <li class="flex items-start text-sm">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span class="text-gray-700">Visualización avanzada</span>
-                        </li>
-                        <li class="flex items-start text-sm">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span class="text-gray-700">Auditoría digital automática</span>
-                        </li>
-                        <li class="flex items-start text-sm">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span class="text-gray-700">10 cupos capacitación SENCE</span>
-                        </li>
-                        <li class="flex items-start text-sm">
+                        <li class="flex items-start">
                             <span class="text-green-500 mr-2">✓</span>
                             <span class="text-gray-700">API avanzada</span>
                         </li>
-                        <li class="flex items-start text-sm">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Integración planilla</span>
+                        </li>
+                        <li class="flex items-start">
                             <span class="text-green-500 mr-2">✓</span>
                             <span class="text-gray-700">Soporte dedicado</span>
                         </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span class="text-gray-700">Auditoría digital</span>
+                        </li>
                     </ul>
 
-                    <a href="mailto:contacto@gaencenter.com?subject=Solicitud Plan Mediana" class="block w-full text-center bg-[#21808d] text-white hover:bg-[#1d7480] py-3 px-6 rounded-lg font-semibold transition-all">
+                    <a href="mailto:contacto@gaencenter.com?subject=Plan Mediana Empresa" class="block w-full text-center bg-[#21808d] text-white hover:bg-[#1d7480] py-3 px-4 rounded-lg font-semibold transition">
                         Solicitar Demo
                     </a>
                 </div>
+
+                <!-- GRANDE/HOLDING -->
+                <div class="price-card rounded-2xl p-6 bg-gradient-to-br from-gray-800 to-gray-900 text-white border-2 border-gray-700">
+                    <div class="bg-yellow-400 text-gray-900 text-xs font-bold py-1 px-3 rounded-full inline-block mb-3">
+                        ⭐ ENTERPRISE
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-white">Grande</h3>
+                    <p class="text-sm text-white/80 mb-4">200+ trabajadores</p>
+                    
+                    <div class="mb-6">
+                        <div class="text-3xl font-bold text-white">Desde $490K</div>
+                        <div class="text-sm text-white/80">+ IVA inicial</div>
+                        <div class="text-lg font-bold text-white mt-2">Desde $299K/mes</div>
+                        <div class="text-xs text-white/80">+ IVA mensual</div>
+                    </div>
+
+                    <ul class="space-y-2 mb-8 text-sm">
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-2">✓</span>
+                            <span>Verificaciones ilimitadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-2">✓</span>
+                            <span>Dashboard multiempresa</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-2">✓</span>
+                            <span>Integración ERP/API</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-2">✓</span>
+                            <span>Soporte VIP + SLA</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-2">✓</span>
+                            <span>Capacitación inhouse</span>
+                        </li>
+                    </ul>
+
+                    <a href="mailto:contacto@gaencenter.com?subject=Plan Grande/Holding" class="block w-full text-center bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-3 px-4 rounded-lg font-semibold transition">
+                        Contactar Ventas
+                    </a>
+                </div>
+            </div>
+
+            <!-- NOTA AL PIE DE PRECIOS -->
+            <div class="mt-12 text-center">
+                <p class="text-sm text-gray-600">
+                    ✅ Todos los planes incluyen migración desde tu sistema actual • Reportes PDF ilimitados • Soporte real
+                </p>
+                <p class="text-xs text-gray-500 mt-2">
+                    Precios en CLP + IVA. Opción de pago trimestral o anual con descuento adicional.
+                </p>
             </div>
         </div>
     </section>
